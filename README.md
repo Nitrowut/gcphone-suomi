@@ -23,7 +23,7 @@ https://mega.nz/file/lXpWDYjD#bRNaJg0Wc3u4UvxZCf6qiSgf5z2FrNgBM1Yws4xQKqo
 - Korjattu virheellinen numeerinen näppäimistö
 - Lisätty erilaisia koteloita iphone 11: lle
 - Lisätty uusia taustakuvia
-- Uudisti gcfonen täydellisen estetiikan ja sen mitat
+- Uudisti gcphonen täydellisen estetiikan ja sen mitat
 
 🔧 Lataus & Asennus
 1. Lataa tiedostot
