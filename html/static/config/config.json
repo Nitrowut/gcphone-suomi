@@ -1,0 +1,384 @@
+{
+  "reseau": "NextRP",
+  "warningMessageCount": 250,
+  "themeColor": "#007aff",
+  "themeColorTitle": "#f7f7f7",
+  "colors": [
+    "#EF5350",
+    "#EC407A",
+    "#AB47BC",
+    "#7E57C2",
+    "#5C6BC0",
+    "#42A5F5",
+    "#29B6F6",
+    "#26C6DA",
+    "#26A69A",
+    "#66BB6A",
+    "#9CCC65",
+    "#D4E157",
+    "#FFCA28",
+    "#FFA726",
+    "#FF7043",
+    "#8D6E63",
+    "#78909C"
+  ],
+
+  "useFormatNumberFrance": true,
+
+  "/Sentry/": "Enabling this option can help us to discover new bugs and solve them ASAP! (We beg you to keep this enabled, so we can help us each other as a community)",
+  "useSentryErroTracking": true,
+
+  "useWebRTCVocal": false,
+  "RTCConfig": {
+    "iceServers": [{
+      "urls": ["turn:barrax.needrp.net"],
+      "username": "gcphone",
+      "credential": "gcphone"
+    }]
+  },
+
+  "//": "REQUIRE https://github.com/citizenfx/screenshot-basic or set false",
+  "enableTakePhoto": true,
+  "fileUploadService_Url": "https://gcphone.herokuapp.com/uploads/upload",
+  "fileUploadService_Field": "image",
+
+  "background": {
+    "White desert": "back001.jpg",
+    "Palms": "back002.jpg",
+    "Santa Mónica Beach": "back003.jpg",
+
+    "Route 66": "color.jpg",
+    "Classic tokyo": "humo.jpg",
+    "Dark planet": "iluminacion.jpg",
+
+    "AstroNeon": "neon.jpg",
+    "Illuminated planet": "oscuridad.jpg",
+    "Wild beach": "playa.jpg",
+    "Winter landscape": "paisajes.jpg",
+    "Tokio neon": "tokio.jpg",
+    "Custom URL": "URL"
+  },
+  "background_default": {
+    "label": "Route 66",
+    "value": "color.jpg"
+  },
+
+
+  "coque": {
+    "Gray": "grey.png",
+    "Salmon": "pink.png",
+    "Red": "red.png",
+    "Mint": "s8.png",
+    "Blue": "blue.png",
+    "Iphone 11": "no_cover.png"
+  },
+
+  "sonido": {
+    "Astronomia": "ring.ogg",
+	"Nokia Arabic Ringtone": "Arabic_Nokia.ogg",
+    "Safaera": "safaera.ogg",
+    "Bella Ciao": "bella_ciao.ogg",
+    "Casa Papel": "casa_papel.ogg",
+    "Iphone 11": "iphone_11.ogg",
+    "Tusa": "tusa.ogg",
+    "XXXTentacion": "xtentacion.ogg"
+  },
+
+  "coque_default": {
+    "label": "Red",
+    "value": "red.png"
+  },
+
+  "sonido_default": {
+    "label": "Nokia Arabic Ringtone",
+    "value": "Arabic_Nokia.ogg"
+  },
+
+
+  "serviceCall": [{
+      "display": "Poliisi",
+      "icon": "/html/static/img/icons_app/policia.png",
+      "subMenu": [{
+          "title": "Lähetä viesti",
+          "eventName": "esx_addons_gcphone:call",
+          "type": {
+            "number": "police"
+          }
+        },
+        {
+          "title": "Soita hätänumeroon",
+          "eventName": "gcphone:autoCallNumber",
+          "type": {
+            "number": "911"
+          }
+        }
+      ]
+    },
+    {
+      "display": "Ensihoito",
+      "backgroundColor": "red",
+      "icon": "/html/static/img/icons_app/Ensihoito.png",
+      "subMenu": [{
+        "title": "Lähetä viesti",
+        "eventName": "esx_addons_gcphone:call",
+        "type": {
+          "number": "ambulance"
+        }
+      }]
+    },
+    {
+      "display": "Taksi",
+      "backgroundColor": "yellow",
+	  "icon": "/html/static/img/icons_app/taxi2.png",
+      "subMenu": [{
+        "title": "Lähetä viesti",
+        "eventName": "esx_addons_gcphone:call",
+        "type": {
+          "number": "taxi"
+        }
+      }]
+    },
+	{
+      "display": "Mekaanikko",
+      "backgroundColor": "grey",
+	  "icon": "/html/static/img/icons_app/meksu.png",
+      "subMenu": [
+        {
+          "title": "Lähetä viesti",
+          "eventName": "esx_addons_gcphone:call",
+          "type": {
+            "number": "mechanic"
+          }
+        }
+      ]
+    }
+  ],
+
+  "defaultContacts": [{
+      "number": "ambulance",
+      "display": "Ensihoito",
+      "backgroundColor": "red",
+      "icon": "/html/static/img/icons_app/Ensihoito.png"
+    },
+    {
+      "number": "police",
+      "display": "Poliisi",
+      "backgroundColor": "blue",
+      "icon": "/html/static/img/icons_app/policia.png"
+    },
+    {
+      "number": "taxi",
+      "display": "Taksi",
+      "backgroundColor": "yellow",
+	  "icon": "/html/static/img/icons_app/taxi2.png"
+    },
+	{
+      "number": "mechanic",
+      "display": "Mekaanikko",
+      "backgroundColor": "grey",
+	  "icon": "/html/static/img/icons_app/meksu.png"
+    }
+  ],
+
+  "apps": [{
+      "name": "Twitter",
+      "en_US__name": "Twitter",
+      "icons": "/html/static/img/icons_app/twitter.png",
+      "routeName": "twitter.splash",
+      "inHomePage": false
+    },
+    {
+      "name": "Phone",
+      "en_US__name": "Puhelin",
+      "icons": "/html/static/img/icons_app/call.png",
+      "routeName": "appels",
+      "inHomePage": true
+    },
+
+
+    {
+      "name": "Contacts",
+      "en_US__name": "Yhteystiedot",
+      "icons": "/html/static/img/icons_app/contacts.png",
+      "routeName": "contacts",
+      "inHomePage": false
+    },
+    {
+      "name": "Messages",
+      "en_US__name": "Viestit",
+      "icons": "/html/static/img/icons_app/sms.png",
+      "routeName": "messages",
+      "inHomePage": true,
+      "puceRef": "nbMessagesUnread"
+    },
+    {
+      "name": "Settings",
+      "en_US__name": "Järjestelmä",
+      "icons": "/html/static/img/icons_app/settings.png",
+      "routeName": "parametre",
+      "inHomePage": false
+    },
+
+    {
+      "name": "Bank",
+      "en_US__name": "Pankki",
+      "icons": "/html/static/img/icons_app/banco.png",
+      "routeName": "bank",
+      "inHomePage": false
+    },
+    {
+      "name": "Bourse",
+      "en_US__name": "Pörssi",
+      "icons": "/html/static/img/icons_app/bourse1.png",
+      "routeName": "bourse",
+      "enabled": true
+    },
+    {
+      "name": "Camera",
+      "en_US__name": "Kamera",
+      "icons": "/html/static/img/icons_app/photo.png",
+      "routeName": "photo"
+    },
+    {
+      "name": "Reddit",
+      "en_US__name": "Reddit",
+      "icons": "/html/static/img/icons_app/reddit.png",
+      "routeName": "tchat"
+    },
+    {
+      "name": "Notes",
+      "en_US__name": "Muistio ",
+      "routeName": "notes",
+      "icons": "/html/static/img/icons_app/notes.png"
+
+    },
+    {
+      "name": "9GAG",
+      "icons": "/html/static/img/icons_app/9gag.png",
+      "routeName": "9gag"
+    }
+  ],
+  "defaultLanguage": "en_US",
+  "language": {
+    "en_US": {
+      "NAME": "Suomi",
+      "PHONE_WARNING_MESSAGE": "Muistutus",
+      "PHONE_WARNING_MESSAGE_MESS": "Viestit",
+      "CONFIRM": "Hyväksy",
+      "CANCEL": "Peruuta",
+      "APP_CONFIG_TITLE": "Asetukset",
+      "APP_MESSAGE_SAVE_CONTACT": "Tallenna yhteystieto",
+      "APP_CONFIG_MY_MUNBER": "Numeroni",
+      "APP_CONFIG_WALLPAPER": "Taustakuva",
+      "APP_CONFIG_CASE": "Puhelinkansi",
+      "APP_CONFIG_SOUND": "Soittoääni",
+      "APP_CONFIG_ZOOM": "Zoom",
+      "APP_CONFIG_VOLUME": "Äänenvoimakkuus",
+      "APP_CONFIG_LANGUAGE": "Kieli",
+      "APP_CONFIG_MOUSE_SUPPORT": "Hiiren hallinta",
+      "APP_CONFIG_RESET": "Tehdasasetusten palautus",
+      "APP_CONFIG_RESET_CONFIRM": "POISTA KAIKKI",
+      "APP_PHONE_CALL": "Soita",
+      "APP_PHONE_CALL_ANONYMOUS": "Nimetön puhelu",
+      "APP_PHONE_DELETE": "Poista",
+      "APP_PHONE_DELETE_ALL": "Poista kaikki.",
+	  "APP_PHONE_CANCEL": "Peruuta",
+      "APP_PHONE_ADD": "Tallenna uutena yhteyshenkilönä",
+      "APP_PHONE_TITLE": "Puhelinnumero",
+      "APP_PHONE_MENU_FAVORITES": "Suosikit",
+      "APP_PHONE_MENU_RECENTS": "Uusimmat",
+      "APP_PHONE_MENU_CONTACTS": "Yhteystiedot",
+      "APP_PHONE_ENTER_NUMBER": "Syötä numero",
+      "APP_PHONE_NUMBER_HIDDEN": "Yksityinen numero",
+      "APP_PHONE_NUMBER_UNKNOWN": "Tuntematon soittaja",
+      "APP_BANK_TITLE": "S Mobiili",
+      "APP_BOURSE_TITLE": "Pörssi",
+      "APP_CONTACT_TITLE": "Yhteystiedot",
+      "APP_CONTACT_NEW": "Uusi yhteystieto",
+      "APP_CONTACT_EDIT": "Muokkaa yhteystietoa",
+      "APP_CONTACT_SAVE": "Tallenna Yhteystieto",
+      "APP_CONTACT_CANCEL": "Peruuta",
+      "APP_CONTACT_DELETE": "Poista",
+      "APP_CONTACT_LABEL_NAME": "Yhteystieto henkilön nimi",
+      "APP_CONTACT_LABEL_NUMBER": "Numero",
+      "APP_MESSAGE_TITLE": "Viestit",
+      "APP_MESSAGE_NEW_MESSAGE": "Uusi viesti",
+      "APP_MESSAGE_ERASE_CONVERSATION": "Poista puhelu",
+      "APP_MESSAGE_ERASE_ALL_CONVERSATIONS": "Poista kaikki viestit",
+      "APP_MESSAGE_SEND_GPS": "Lähetä GPS-sijainti",
+      "APP_MESSAGE_SET_GPS": "GPS-sijainti",
+      "APP_MESSAGE_ZOOM_IMG": "Lähennä",
+      "APP_MESSAGE_DELETE": "Poista",
+      "APP_MESSAGE_SMS": "Tekstiviesti",
+      "APP_MESSAGE_CONTACT_TITLE": "Yhteystiedot",
+      "APP_MESSAGE_CONTRACT_ENTER_NUMBER": "Syötä numero",
+      "APP_MESSAGE_PLACEHOLDER_ENTER_MESSAGE": "Lähetä viesti",
+      "APP_MESSAGE_MESS_SMS": "Tekstiviesti",
+      "APP_MESSAGE_MESS_CALL": "Soita",
+      "APP_MESSAGE_MESS_COPY": "Kopioi",
+      "APP_MESSAGE_SEND_PHOTO": "Lähetä valokuva",
+      "APP_DARKTCHAT_TITLE": "Dark Web",
+      "APP_DARKTCHAT_NEW_CHANNEL": "Lisää kanava",
+      "APP_DARKTCHAT_DELETE_CHANNEL": "Poista kanava",
+      "APP_DARKTCHAT_CANCEL": "Peruuta",
+      "APP_DARKTCHAT_PLACEHOLDER_ENTER_MESSAGE": "Kirjoita viesti",
+      "APP_TWITTER_NAME": "Twitter",
+      "APP_TWITTER_VIEW_TWITTER": "Twitter",
+      "APP_TWITTER_VIEW_TOP_TWEETS": "Suosituimmat twiitit",
+      "APP_TWITTER_VIEW_TWEETER": "Twiitit",
+      "APP_TWITTER_VIEW_SETTING": "Asetukset",
+      "APP_TWITTER_NEW_ACCOUNT_USERNAME": "Käyttäjätunnus (>= 4)",
+      "APP_TWITTER_NEW_ACCOUNT_PASSWORD": "Salasana (>= 6)",
+      "APP_TWITTER_NEW_ACCOUNT_PASSWORD_CONFIRM": "Vahvista salasana",
+      "APP_TWITTER_NEW_ACCOUNT_AVATAR": "Avatarin URL-osoite",
+      "APP_TWITTER_PLACEHOLDER_MESSAGE": "Mikä sinua vaivaa?",
+      "APP_TWITTER_BUTTON_ACTION_TWEETER": "Tweeter",
+      "APP_TWITTER_ACCOUNT_LOGIN": "Kirjaudu verkkosivustolle",
+      "APP_TWITTER_ACCOUNT_LOGOUT": "Kirjaudu ulos",
+      "APP_TWITTER_ACCOUNT_PARAM": "Tilini",
+      "APP_TWITTER_ACCOUNT_AVATAR": "Avatarin vaihtaminen",
+      "APP_TWITTER_ACCOUNT_CHANGE_PASSWORD": "Vaihda salasana",
+      "APP_TWITTER_ACCOUNT_NEW": "Uusi tili",
+      "APP_TWIITER_ACCOUNT_SAVE": "rekisteröinti",
+      "APP_TWIITER_ACCOUNT_CREATE": "Luo tili",
+      "APP_TWIITER_ACCOUNT_CANCEL": "Peruuta",
+      "APP_TWITTER_ACCOUNT_USERNAME": "Käyttäjänimi",
+      "APP_TWITTER_ACCOUNT_PASSWORD": "Salasana",
+      "APP_TWITTER_NOTIFICATION": "ilmoitukset",
+      "APP_TWITTER_NOTIFICATION_WHEN": "Ilmoitetaan",
+      "APP_TWITTER_NOTIFICATION_ALL": "Kaikki uutiset",
+      "APP_TWITTER_NOTIFICATION_MENTION": "Sinut merkittiin",
+      "APP_TWITTER_NOTIFICATION_NEVER": "Ei kukaan",
+      "APP_TWITTER_NOTIFICATION_SOUND": "Toista ääni",
+      "APP_TWITTER_NOTIFICATION_SOUND_YES": "Kyllä",
+      "APP_TWITTER_NOTIFICATION_SOUND_NO": "Ei",
+      "APP_TWITTER_NOTIF_ACCOUNT_CREATE_SUCCESS": "Twitter-tilisi on luotu.",
+      "APP_TWITTER_NOTIF_ACCOUNT_CREATE_ERROR": "Twitter-tiliäsi ei voitu luoda (käyttäjänimeä jo käytetty?)",
+      "APP_TWITTER_NOTIF_LOGIN_SUCCESS": "Olet yhteydessä Twitteriin.",
+      "APP_TWITTER_NOTIF_LOGIN_ERROR": "Virheellinen Käyttäjänimi / Salasanat",
+      "APP_TWITTER_NOTIF_AVATAR_SUCCESS": "Avatarisi on vaihdettu!",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_SUCCESS": "Salasanasi on vaihdettu.",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_ERROR": "Hups .... Salasanaa ei voitu vaihtaa.",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_MISS_MATCH": "Salasanat eivät täsmää",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_LENGTH_ERROR": "Salasana on liian lyhyt",
+      "APP_NOTES": "Muistio",
+      "APP_BANK_TITLE_BALANCE": "Saldo: ",
+      "APP_BANK_TITLE_ENTER_MONEY": "Syötä summa",
+      "APP_BANK_BUTTON_TRANSFER": "Siirtää",
+      "APP_BANK_BUTTON_CANCEL": "Peruuta",
+      "APP_DARKTCHAT_NEW_NOTE": "Uusi muistiinpano",
+      "APP_DARKTCHAT_DELETE_NOTE": "Poista muistiinpano",
+
+      "TIMEAGO": [
+        "juuri nyt",
+        ["%s sekunti sitten", "%s sekuntia sitten"],
+        ["%s minuutti sitten", "%s minuuttia sitten"],
+        ["%s tunti sitten", "%s tunteja sitten"],
+        ["%s päivä sitten", "%s päivää sitten"],
+        ["%s viikko sitten", "%s viikkoa sitten"],
+        ["%s kuukausi sitten", "%s kuukautta sitten"],
+        ["%s vuosi sitten", "%s vuotta sitten"]
+      ]
+    }
+  }
+}
