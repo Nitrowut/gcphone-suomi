@@ -8,7 +8,7 @@ FiveM GCPhone - Finnish Translation - Suomennettu - GC Phone
 - esx_taxijob
 
 👨‍🔧 esx_addons_gcphone:
-https://mega.nz/file/lXpWDYjD#bRNaJg0Wc3u4UvxZCf6qiSgf5z2FrNgBM1Yws4xQKqo
+https://bit.ly/39q3x4W
 
 ✅ Ominaisuudet
 - Yhteystietoluettelo
